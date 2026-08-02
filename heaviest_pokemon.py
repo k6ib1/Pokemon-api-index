@@ -8,6 +8,12 @@ base_url = "https://pokeapi.co/api/v2/"
 list_response = requests.get(f"{base_url}pokemon", params={"limit": 1000})   # recieving first 1000 pokemon
 list_data = list_response.json()
 
+with open("list_data.json", "w", encoding="utf-8") as file:
+    json.dump(list_data, file, indent=2)
+
+print("Saved list_data.json")
+print(json.dumps(list_data, indent=2)[:500])
+
 heaviest = None
 heaviest_weight = -1
 
