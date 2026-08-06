@@ -1,3 +1,6 @@
+# sample file of pokemon , url + name inc
+
+
 {
   "count": 1351,
   "next": "https://pokeapi.co/api/v2/pokemon?offset=100&limit=100",
